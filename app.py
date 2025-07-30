@@ -11,9 +11,13 @@ app.config['QR_FOLDER'] = 'static/qr'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['QR_FOLDER'], exist_ok=True)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
+    if request.method == 'POST':
+        # handle uploaded file here
+        ...
     return render_template('index.html')
+
 
 @app.route('/generate_qr', methods=['POST'])
 def generate_qr():
