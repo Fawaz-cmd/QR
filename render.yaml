@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: image-qr-generator
+    env: python
+    buildCommand: ""
+    startCommand: python app.py

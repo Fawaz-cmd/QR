@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 400px;
+}
+
+input[type="file"] {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4752d5;
+}
+
+.result img {
+    margin-top: 20px;
+    max-width: 100%;
+}
