@@ -1,6 +1,8 @@
 services:
   - type: web
-    name: image-qr-generator
+    name: image-qr-website
     env: python
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python app.py
+    plan: free
+    branch: main
