@@ -63,6 +63,17 @@
     </div>
     {% endif %}
   </div>
+  {% if qr_code %}
+    <div style="margin-top: 20px; text-align: center;">
+        <h4>🔳 Your QR Code:</h4>
+        <img src="{{ url_for('static', filename=qr_code.split('static/')[1]) }}" alt="QR Code" style="max-width: 300px;">
+        <br><br>
+        <a href="{{ url_for('static', filename=qr_code.split('static/')[1]) }}" download>
+            <button class="btn btn-success">Download QR</button>
+        </a>
+    </div>
+{% endif %}
+
 
 </body>
 </html>
